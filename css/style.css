@@ -1,9 +1,12 @@
 /* appling google font over the website  */
-body{
+*{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
+      
+      
 }
 /* styling menu icon */
 .nav-menu{
