@@ -4,9 +4,10 @@
     font-weight: 400;
     margin: 0px;
     padding: 0px;
+  
+}
+body{
     overflow-x: hidden;
-      
-      
 }
 /* styling menu icon */
 .nav-menu{
@@ -18,6 +19,12 @@
 #menu{
     color: #fca61f;
 }
+#navbar-top {
+    background-color: white; /* Change as needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for effect */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
 /* styling navbar links  */
 .navbar-nav a{
     color: black;
@@ -74,6 +81,11 @@
     color: #fff;
     transform: translateY(-20px);
     transition-duration: 1s;
+    text-decoration: none;
+    
+}
+#hire-btn{
+    text-decoration: none;
 }
 .link{
     text-decoration: none;
@@ -312,7 +324,49 @@ footer{
     background-color: #211e39;
 }
 
-footer .link-group a{
+.social-links {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-top: 2rem; /* mt-5 equivalent */
+    justify-content: center; /* Center the buttons */
+}
+.social-links a {
+    border: none;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    background-color: #fff;
+    padding: 14px 15px 10px 15px;
+    border-radius: 50px; /* Rounded edges */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s, transform 1s; /* Smooth transition */
+}
+.social-links .dribble {
+    color: #f33a7e; /* Dribbble color */
+}
+.social-links .dribble:hover {
+    background-color: #f33a7e; /* Background on hover */
+    color: #fff; /* Text color on hover */
+    transform: translateY(-20px); /* Lift effect */
+}
+.social-links .whatsapp {
+    color: #25D366; /* WhatsApp color */
+}
+.social-links .whatsapp:hover {
+    background-color: #25D366; /* Background on hover */
+    color: #fff; /* Text color on hover */
+    transform: translateY(-20px); /* Lift effect */
+}
+.social-links .behance {
+    color: #255afc; /* Behance color */
+}
+.social-links .behance:hover {
+    background-color: #255afc; /* Background on hover */
+    color: #fff; /* Text color on hover */
+    transform: translateY(-20px); /* Lift effect */
+}
+
+/* Styling for footer links */
+footer .link-group a {
     margin-left: 10px;
     margin-right: 10px;
     text-decoration: none;
@@ -320,42 +374,12 @@ footer .link-group a{
     font-size: 1.1rem;
     margin-top: 1rem;
 }
-footer .link-group a:hover{
-    color: #fca61f;
-}
-.social-links button{
-    border: none;
-    margin-right: 1rem;
-    font-size: 1.2rem;
-    background-color: #fff;
-    padding: 14px 15px 10px 15px;
-}
-.social-links .dribble{
-    color: #f33a7e;
-}
-.social-links button:hover{
-    color: #fff;
-    transform: translateY(-20px);
-    transition-duration: 1s;
-}
-.social-links .dribble:hover{
-    background-color: #f33a7e;
-}
-.social-links .whatsapp{
-    color: #25D366;
-}
-.social-links .whatsapp:hover{
-    background-color: #25D366;
-}
-.social-links .behance{
-    color: #255afc;
-}
-.social-links .behance:hover{
-    background-color: #255afc;
+footer .link-group a:hover {
+    color: #fca61f; /* Hover color for footer links */
 }
 
-/* styling back to top button */
-#btn-back-to-top {
+/* Styling back to top button */
+#rounded-pill-back-to-top {
     position: fixed;
     bottom: 40px;
     right: 40px;
@@ -363,5 +387,8 @@ footer .link-group a:hover{
     font-size: 1.4rem;
     background-color: #fca61f;
     color: #fff;
-    animation: pulse 3s infinite;
+    animation: pulse 3s infinite; /* Add pulse animation */
+    border-radius: 50px; /* Rounded edges */
+    padding: 10px 15px; /* Padding */
+    text-decoration: none; /* Remove underline */
 }
