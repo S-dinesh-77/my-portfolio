@@ -21,7 +21,7 @@ let javascriptProgress = document.querySelector(".javascript"),
   javascriptValue = document.querySelector(".javascript-progress");
 
 let javascriptStartValue = 0,
-  javascriptEndValue = 70,
+  javascriptEndValue = 65,
   jsSpeed = 30;
 
 let progressJs = setInterval(() => {
@@ -106,4 +106,37 @@ let progressGithub = setInterval(() => {
   }
 }, githubSpeed);
 
-// Add your existing jQuery and other scripts here...
+let expressProgress = document.querySelector(".express"),
+  expressValue = document.querySelector(".express-progress");
+
+let expressStartValue = 0,
+  expressEndValue = 60,
+  expressSpeed = 30;
+
+let progressexpress = setInterval(() => {
+  expressStartValue++;
+  expressValue.textContent = `${expressStartValue}%`;
+  expressProgress.style.background = `conic-gradient(#20c997 ${expressStartValue * 3.6}deg, #ededed 0deg)`;
+
+  if (expressStartValue === expressEndValue) {
+    clearInterval(progressexpress);
+  }
+}, expressSpeed);
+
+
+let mongodbProgress = document.querySelector(".mongodb"),
+mongodbValue = document.querySelector(".mongodb-progress");
+
+let mongodbStartValue = 0,
+mongodbEndValue = 75,
+mongodbSpeed = 30;
+
+let progressmongodb = setInterval(() => {
+  mongodbStartValue++;
+  mongodbValue.textContent = `${mongodbStartValue}%`;
+  mongodbProgress.style.background = `conic-gradient(#20c997 ${mongodbStartValue * 3.6}deg, #ededed 0deg)`;
+
+  if (mongodbStartValue === mongodbEndValue) {
+    clearInterval(progressmongodb);
+  }
+}, mongodbSpeed);
