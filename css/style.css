@@ -231,6 +231,8 @@ body , html{
 }
 
 /* project  */
+
+  
 .projects {
     padding-top: 75px;
 }
@@ -289,6 +291,7 @@ body , html{
 
 .card-body{
     margin-top: 20px;
+    border-top: 2px solid gray;
 }
 
 
