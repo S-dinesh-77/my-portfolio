@@ -33,7 +33,7 @@
 
     <!-- for adding animation to website we have use AOS library 
     AOS Library css file cdn link -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
 
     <!-- jquery cdn link  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -42,134 +42,129 @@
     <!-- navbar starts -->
     <nav id="navbar-top" class="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid px-5">
-          <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Portfolio</a>
-          <button
-              class="navbar-toggler d-lg-none"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-          >
-              <i class="bi bi-menu-button-fill" id="menu"></i>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-              <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
-                  <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#service">Service</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#portfolio">Projects</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#certificates">Certificates</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#contact">Contact</a>
-                  </li>
-              </ul>
-          </div>
+        <a class="navbar-brand fw-bold fs-2" href="#">Portfolio</a>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-menu-button-fill" id="menu"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificates">Certificates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </nav>
-  
-  
+    </nav>
+
     <!-- navbar ends here -->
 
     <!-- home section starts  -->
     <section class="home pt-5 pb-5" id="home">
-      <div class="row justify-content-evenly align-middle">
-        <!-- here data-aos is used for adding aos animation  -->
-        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
-          <h2 style="color: #3f396d">
-            Hello! I Am <br /><span class="c-orange">D i n e s h</span>
-          </h2>
+      <div class="row justify-content-evenly align-middle" id="home-content">
+       
+        <div
+          class="col-10 col-md-6 text-center text-md-start"
+          data-aos="slide-right"
+        >
+          <h2>Hello! I Am <br /><span>D i n e s h</span></h2>
           <p class="text-muted"></p>
-            
-              <p>Enthusiastic web developer with a passion for creating user-friendly and responsive websites ...</p>
-          <a class="c-btn h-btn mt-3 py-3 px-5 rounded-pill" href="https://wa.me/9345857859" target="_blank" id="hire-btn">
+
+          <p>
+            Enthusiastic web developer with a passion for creating user-friendly
+            and responsive websites ...
+          </p>
+          <a
+            class="c-btn h-btn mt-3 py-3 px-5 rounded-pill"
+            href="https://wa.me/9345857859"
+            target="_blank"
+            id="hire-btn"
+          >
             Hire Me
-        </a>
-          
+          </a>
         </div>
-        <div class="col-10 col-md-4 d-none d-md-block">
-          <img src="images/jd.webp" class="img-fluid" alt="" />
+        <div class="col-10 col-md-4 d-none d-md-block br-50">
+          <img src="images/di.webp" class="img-fluid" alt="" />
         </div>
       </div>
     </section>
     <!-- home section ends here -->
 
     <!-- expertise section starts -->
-    <section class="expertise  " id="service">
+    <section class="expertise" id="service">
       <div class="heading text-center">
-        <small>My Expertise</small>
-       
+        <h3>My Expertise</h3>
       </div>
-      <div class="row justify-content-evenly mt-5">
+      <div class="row justify-content-evenly">
         <div class="col-10 col-md-4" data-aos="fade-up">
           <div class="service-card">
             <div class="img">
-              <img
-                src="images/service-icon1.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
+              <img src="images/response.avif" class="img-fluid img" alt="" />
             </div>
             <div class="content mt-3">
               <h4>Responsive Web Design</h4>
               <p class="text-muted">
-                Skilled in create responsive web designs that 
-                look and perform flawlessly on any device.
-                My designs adapt seamlessly to various screen sizes,
-                enhancing user experience across all platforms.
+                Skilled in create responsive web designs that look and perform
+                flawlessly on any device. My designs adapt seamlessly to various
+                screen sizes, enhancing user experience across all platforms.
               </p>
-            
             </div>
           </div>
         </div>
         <div class="col-md-4 col-10" data-aos="fade-up">
           <div class="service-card">
             <div class="img">
-              <img
-                src="images/service-icon2.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
+              <img src="images/web.avif" class="img-fluid img" alt="" />
             </div>
             <div class="content mt-3">
               <h4>Web Development</h4>
               <p class="text-muted">
-                Skilled in web development with create clean and functional websites with a 
-                focus on user experience. My approach combines
-                modern technologies and design principles to build effective online solutions.
+                Skilled in web development with create clean and functional
+                websites with a focus on user experience. My approach combines
+                modern technologies and design principles to build effective
+                online solutions.
               </p>
-              
             </div>
           </div>
         </div>
         <div class="col-md-4 col-10" data-aos="fade-up">
           <div class="service-card">
             <div class="img">
-              <img
-                src="images/service-icon3.png"
-                class="w-25 img-fluid img"
-                alt=""
-              />
+              <img src="images/ui.avif" class="img-fluid img" alt="" />
             </div>
             <div class="content mt-3">
-              <h4> UI Design & Development  </h4>
+              <h4>UI Design & Development</h4>
               <p class="text-muted">
-                well-designed user interface is crucial for engagement and usability. 
-                I provide UI design and development services that create intuitive, visually appealing interfaces,
-                 utilizing the latest technologies with front-end development
+                well-designed user interface is crucial for engagement and
+                usability. I provide UI design and development services that
+                create intuitive, visually appealing interfaces, utilizing the
+                latest technologies
               </p>
-              
             </div>
           </div>
         </div>
@@ -178,212 +173,215 @@
     <!-- expertise section ends here -->
 
     <!-- skill section starts -->
-    <section class="skill mt-5 " id="about">
+    <section class="skill" id="about">
       <div class="heading text-center">
-        <small>About</small>
-       
+        <h3>About</h3>
+        <small>My Skills</small>
       </div>
-      <div class="row justify-content-evenly">
-        
-        <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
-          <div class="row justify-content-evenly">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress html-css">
-                  <span class="progress-value html-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">HTML & CSS</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress javascript">
-                  <span class="progress-value javascript-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">JavaScript</span>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-evenly mt-4">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress php">
-                  <span class="progress-value php-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">jQuery</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress reactjs">
-                  <span class="progress-value reactjs-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">ReactJS</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="row justify-content-evenly mt-4">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress express">
-                  <span class="progress-value express-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">Node & Express js</span>
-              </div>
-            </div>
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress mongodb">
-                  <span class="progress-value mongodb-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">MongoDb</span>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-evenly mt-4">
-            <div class="col-10 col-md-6">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress bootstrap">
-                  <span class="progress-value bootstrap-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">Bootstrap</span>
-              </div>
-            </div>
-
-           
-         
-            <div class="col-10 col-md-6 mt-4 mt-md-0">
-              <div class="progress-card ms-3 ms-md-0">
-                <div class="circular-progress github">
-                  <span class="progress-value github-progress">0%</span>
-                </div>
-                <br />
-                <span class="text">GitHub</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="row justify-content-evenly" id="skill-container">
         <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-          <div class="heading mt-5 mt-md-3">
-            <small>My Skills</small>
-            <h3>Summary</h3>
+          <div class="heading mt-5 mt-md-3" id="sum-container">
+            <h4>Summary</h4>
             <p class="text-muted">
-              I am proficient in a range of web development technologies, including HTML5, CSS3, JavaScript, React.js, and 
-              jQuery. With HTML5, I focus on creating semantic and accessible web 
-              structures that enhance user experience. My CSS3 skills enable me to design 
-              responsive layouts using Flexbox and Grid, ensuring that websites look great on any device. I have a 
-              strong command of JavaScript, utilizing ES6+ features to build dynamic and interactive application
+              I am proficient in a range of web development technologies,
+              including HTML5, CSS3, JavaScript, React.js, and jQuery. With
+              HTML5, I focus on creating semantic and accessible web structures
+              that enhance user experience. My CSS3 skills enable me to design
+              responsive layouts using Flexbox and Grid, ensuring that websites
+              look great on any device. I have a strong command of JavaScript,
+              utilizing ES6+ features to build dynamic and interactive
+              application
             </p>
-            <p class="text-muted">
-              
-            </p>
+            <p class="text-muted"></p>
             <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
               <a
                 href="dinesh Resume.pdf.pdf"
                 download="Dineh s.CV"
-                style="text-decoration: none; color: #fff;"
-              >Download CV</a>
+                style="text-decoration: none; color: #fff"
+                >Download CV</a
+              >
             </button>
+          </div>
+        </div>
+
+        <div class="logos">
+          <div class="logo-slide">
+            <img src="images/html.png" alt="" />
+            <img src="images/css.png" alt="" />
+            <img src="images/js.png" alt="" />
+            <img src="images/bs.jpg" alt="" />
+            <img src="images/jq.png" alt="" />
+            <img src="images/rjs.png" alt="" />
+            <img src="images/node.png" alt="" />
+            <img src="images/ex.png" alt="" />
+            <img src="images/md.png" alt="" />
+            <img src="images/npm.png" alt="" />
+          </div>
+          <div class="logo-slide">
+            <img src="images/html.png" alt="" />
+            <img src="images/css.png" alt="" />
+            <img src="images/js.png" alt="" />
+            <img src="images/bs.jpg" alt="" />
+            <img src="images/jq.png" alt="" />
+            <img src="images/rjs.png" alt="" />
+            <img src="images/node.png" alt="" />
+            <img src="images/ex.png" alt="" />
+            <img src="images/md.png" alt="" />
+            <img src="images/npm.png" alt="" />
           </div>
         </div>
       </div>
     </section>
-    
-    <!-- skill section end here -->
-     
-    <!-- project section start here -->
-    <section class="projects mt-5 " id="portfolio">
-      <div class="heading text-center">
-          <small>My Projects</small>
-          <h3>Explore My Work</h3>
-      </div>
-      <div class="container mt-4">
-          <div class="row justify-content-center">
-              <div class="col-md-4 mb-4" data-aos="fade-up">
-                  <div class="card">
-                    
-                      <img src="images/food-app.jpeg" class="card-img-top" alt="Project 1" />
-                      <div class="card-body">
-                          <h5 class="card-title">Food Order Website </h5>
-                         <p>A React.js food ordering app with features like user (login/signup), adding items to the cart, filtering food categories, and viewing the total cart amount.</p>
-                          <a href="https://food-order-website-orpin.vercel.app/" class="btn btn-primary">View Project</a>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                <div class="card">
-                    <img src="images/notes-app.jpeg" class="card-img-top" alt="Project 3" />
-                    <div class="card-body">
-                    
-                        <h5 class="card-title">Notes App</h5>
-                       <p>
-                        A React.js Notes app with user authentication (login/signup), and features with CRUD operation.</p>
-                        <a href="https://notes-app-client-06p2.onrender.com" class="btn btn-primary">View Project</a>
-                    </div>
-                </div>
-             </div>
-             <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="card">
-                  <img src="images/todo.jpg" class="card-img-top" alt="Project 3" />
-                  <div class="card-body">
-                  
-                      <h5 class="card-title">Todo List</h5>
-                     <p>A Todo List with add and delete todo list with User can change color themes</p>
-                      <a href="https://s-dinesh-77.github.io/Todo-List-App/" class="btn btn-primary">View Project</a>
-                  </div>
-              </div>
-           </div>
-           <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card">
-                <img src="images/udemy.jpg" class="card-img-top" alt="Project 3" />
-                <div class="card-body">
-                
-                    <h5 class="card-title">Udemy Clone</h5>
-                   <p>Udemy Clone landing page </p>
-                    <a href=" https://s-dinesh-77.github.io/udemy-clone/" class="btn btn-primary">View Project</a>
-                </div>
-            </div>
-         </div>
-          </div>
-      </div>
-  </section>
-  <!-- Projects Section Ends -->
-    <!-- certificate section starts here -->
-   <!-- certificate section starts here -->
-   <section class="certificates" id="certificates">
-    <div class="heading text-center">
-        <small>My Certificates</small>
-        <h4 class="card-title">Web Development Certificate</h4>
-    </div>
-    <div class="container">
-        <div class="certificate-card">
-            <img src="images/IMG_20240926_120745.jpg" class="card-cimg-top" alt="Certificate 1" loading="lazy" />
-            <div class="card-body">
-               
-                
-            </div>
-        </div>
-    </div>
-</section>
 
-  
-<!-- certificate section ends here -->
+    <!-- skill section end here -->
+
+    <!-- project section start here -->
+    <section class="projects mt-5" id="portfolio">
+      <div class="heading text-center">
+        <h3>My Projects</h3>
+        <small>Explore My Work</small>
+      </div>
+      <div class="container mt-4 ">
+        <div class="row justify-content-center" id="p-main-con">
+          <div
+            class="col-6 col-md-6 col-sm-6 col-lg-4 mb-4"
+            data-aos="fade-up"
+            id="card-container"
+          >
+            <div class="card">
+              
+                <img src="images/food.jpg" class="img-fluid img"  alt="" />
+             
+
+              <div class="card-body">
+                <h5 class="card-title">Food Order Website</h5>
+                <p>
+                  A React.js food ordering app with features like user
+                  (login/signup), adding items to the cart, filtering food
+                  categories.
+                </p>
+                <a
+                  href="https://food-order-website-orpin.vercel.app/"
+                  class="btn btn-primary"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-6 col-sm-6 col-lg-4 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            id="card-container"
+          >
+            <div class="card">
+             
+                <img src="images/Note-Taking .avif" class="img-fluid img" alt="" />
+
+              
+
+              <div class="card-body">
+                <h5 class="card-title">Notes App</h5>
+                <p>
+                  A React.js Notes app with user authentication (login/signup),
+                  and features with CRUD operation.
+                </p>
+                <a
+                  href="https://notes-app-client-06p2.onrender.com"
+                  class="btn btn-primary"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-6 col-sm-6 col-lg-4 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            id="card-container"
+          >
+            <div class="card">
+             
+                <img
+                src="images/Todo List App using HTML CSS & JavaScript.jpg"
+                alt=""
+              />
+
+             
+             
+
+              <div class="card-body">
+                <h5 class="card-title">Todo List</h5>
+                <p>
+                  A Todo List with add and delete todo list with User can change
+                  color themes
+                </p>
+                <a
+                  href="https://s-dinesh-77.github.io/Todo-List-App/"
+                  class="btn btn-primary"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-6 col-md-6 col-sm-6 col-lg-4 mb-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            id="card-container"
+          >
+            <div class="card">
+             
+                 <img
+                src="images/Onsite_Desktop_GLSTR25.png"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              
+             
+              <div class="card-body">
+                <h5 class="card-title">Udemy Clone</h5>
+                <p>Udemy Clone landing page</p>
+                <a
+                  href=" https://s-dinesh-77.github.io/udemy-clone/"
+                  class="btn btn-primary"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects Section Ends -->
+
+    <!-- certificate section starts here -->
+    <section class="certificates" id="certificates">
+      <div class="heading text-center">
+        <h3>My Certificates</h3>
+        <small class="card-title">Web Development Certificate</small>
+      </div>
+      <div class="container">
+        <div class="certificate-card">
+          <img
+            src="images/IMG_20240926_120745.jpg"
+            class="card-cimg-top"
+            alt="Certificate 1"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- certificate section ends here -->
 
     <!-- certificate section ends here -->
 
     <!-- contact section starts -->
-    <section class="contact " id="contact">
+    <section class="contact" id="contact">
       <div class="heading text-center">
-        <small>Get in Touch</small>
-        <h3>Any Questions? Feel Free to Contact</h3>
+        <h3>Get in Touch</h3>
+        <small>Any Questions? Feel Free to Contact</small>
       </div>
       <div class="row justify-content-evenly mt-5">
         <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
@@ -463,7 +461,7 @@
     </section>
     <!-- contact section ends here -->
 
-      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
     <button
       type="button"
       class="btn btn-floating btn-lg rounded-pill"
@@ -489,26 +487,41 @@
         <a href="#contact">Contact</a>
       </div>
       <div class="social-links mt-5" data-aos="fade-up">
-        <a href="mailto:your-dinesh7733@outlook.com?subject=Subject%20Here&body=Body%20Here" class="rounded-pill dribble">
-            <i class="bi bi-envelope"></i>
+        <a
+          href="mailto:your-dinesh7733@outlook.com?subject=Subject%20Here&body=Body%20Here"
+          class="rounded-pill dribble"
+        >
+          <i class="bi bi-envelope"></i>
         </a>
-        <a href="https://wa.me/9345857859" class="rounded-pill whatsapp" target="_blank">
-            <i class="bi bi-whatsapp"></i>
+        <a
+          href="https://wa.me/9345857859"
+          class="rounded-pill whatsapp"
+          target="_blank"
+        >
+          <i class="bi bi-whatsapp"></i>
         </a>
-        <a href="https://www.linkedin.com/in/dineshs73" class="rounded-pill behance" target="_blank">
-            <i class="bi bi-linkedin"></i>
+        <a
+          href="https://www.linkedin.com/in/dineshs73"
+          class="rounded-pill behance"
+          target="_blank"
+        >
+          <i class="bi bi-linkedin"></i>
         </a>
-        <a href="https://github.com/S-dinesh-77" class="rounded-pill behance" target="_blank">
+        <a
+          href="https://github.com/S-dinesh-77"
+          class="rounded-pill behance"
+          target="_blank"
+        >
           <i class="bi bi-github"></i>
-      </a>
-    </div>
+        </a>
+      </div>
       <hr class="text-muted my-4" />
 
       <p>Copyright 2024 Portfolio | All Rights Reserved.</p>
     </footer>
     <!-- footer section ends here -->
 
-      <!-- bootstrap javascript cdn link  -->
+    <!-- bootstrap javascript cdn link  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
@@ -526,6 +539,5 @@
     </script>
     <!-- custom js file linking -->
     <script src="js/script.js"></script>
-    
   </body>
 </html>
