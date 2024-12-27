@@ -8,7 +8,7 @@
     
 }
 body , html{
-    overflow-x: hidden;
+   
     width: 100%;
     
     color: white;
@@ -36,12 +36,7 @@ color: white;
   transition: all 0.3s ease-in-out;
 }
 
-.nav-menu{
-    border: none;
-    /* background-color: #fff; */
-    font-size: 1.5rem;
-    color: #fca61f;
-}
+
 #menu{
     color: white;
 }
@@ -62,11 +57,15 @@ color: white;
   transition: all 0.3s ease-in-out;
 }
 #navbar-top {
-   background-color:#393f4d; 
-   z-index: 1000; /* Ensure it stays above other content */
-   
+    background-color:#393f4d;
+    z-index: 1000;
+  }
+
+  #navbar-top.scrolled {
+    background-color: #3f3d3f; /* Change this to your desired color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
   
-}
 
 /* styling navbar links  */
 
@@ -187,6 +186,7 @@ a:hover::before {
   }
 .home{
     background-color:#393f4d;
+    
 }
 
 .home h2{
