@@ -8,7 +8,7 @@
     
 }
 
-body{
+body,html{
   width: 100%;
   overflow-x: hidden;
 }
@@ -22,19 +22,15 @@ img, video {
   overflow: hidden;
 }
 #navbar-top {
-  position: sticky;
+  position: fixed;
   top: 0;
+  max-width: 100%;
   z-index: 1020;
   background-color: #393f4d;
   width: 100%; /* Ensure navbar doesn't extend beyond the viewport */
   left: 0; /* Add this to make sure navbar stays aligned */
 }
-#navbar-top {
-  position: fixed; /* Sticky navbar fixed at top */
-  top: 0;
-  left: 0; /* Ensure navbar stays within viewport */
-  z-index: 1030;
-}
+
 @media (max-width: 768px) {
   /* Adjust navbar for mobile */
   #navbar-top {
