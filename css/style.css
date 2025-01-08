@@ -12,6 +12,13 @@ body{
   overflow-x:hidden ;
   width: 100%;
 }
+#navbar-top {
+  position: sticky; /* Ensures it's sticky */
+  top: 0; /* Sticks at the top of the viewport */
+  z-index: 1020; /* Keeps it above other content */
+  background-color: #393f4d; /* Matches your design */
+}
+
 @media (max-width: 995px) {
   #navbar-top {
       position: sticky;
