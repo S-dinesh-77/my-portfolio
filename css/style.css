@@ -4,18 +4,18 @@
     font-weight: 400;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+    
     
 }
 
 body{
-  overflow-x:hidden ;
   width: 100%;
+  
 }
 #navbar-top {
-  position: sticky; /* Ensures it's sticky */
+  position: fixed; /* Ensures it's sticky */
   top: 0; /* Sticks at the top of the viewport */
-  z-index: 1020; /* Keeps it above other content */
+  z-index: 1030; /* Keeps it above other content */
   background-color: #393f4d; /* Matches your design */
 }
 
@@ -23,6 +23,7 @@ body{
   #navbar-top {
       position: sticky;
       top: 0;
+      z-index: 1030; 
   }
 }
 
@@ -221,6 +222,7 @@ a:hover::before {
     width: fit-content;
     margin-top: 1rem;
     font-size: 1.2rem;
+    color: white;
 }
 .h-btn:hover {
     /* background:#116164; */
@@ -529,6 +531,7 @@ a:hover::before {
       transition: transform 0.5s;
       border-radius: 0;
       height: 300px;
+      overflow: hidden;
   }
   @media (max-width: 578px) {
     #p-main-con {
