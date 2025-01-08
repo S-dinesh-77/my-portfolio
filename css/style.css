@@ -63,9 +63,11 @@ color: white;
   border: none;
 }
 #navbar-top {
-    background-color:#393f4d;
-    z-index: 1000;
-  }
+  position: sticky; /* Ensures it's sticky */
+  top: 0; /* Sticks at the top of the viewport */
+  z-index: 1020; /* Keeps it above other content */
+  background-color: #393f4d; /* Matches your design */
+}
 
 
 
