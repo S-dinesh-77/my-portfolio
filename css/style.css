@@ -13,10 +13,7 @@ body,html{
   overflow-x: hidden;
 }
 
-.container {
-  max-width: 100%;
-  overflow: hidden;
-}
+
 #navbar-top {
   position: fixed;
   top: 0;
@@ -529,7 +526,7 @@ a:hover::before {
 
   .card img {
       object-fit: cover; /* Ensures the image scales well */
-      width: 100%;
+      
       border: none;
       align-items: center;
       display: block;
