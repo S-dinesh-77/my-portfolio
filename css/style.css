@@ -7,12 +7,10 @@
     box-sizing: border-box;
     
 }
-body , html{
-   
-    width: 100%;
-    
-    color: white;
-      
+
+body{
+  overflow-x: hidden; 
+    width:100%;
 }
 /* styling menu icon */
 .navbar-brand {
@@ -36,6 +34,13 @@ color: white;
   transition: all 0.3s ease-in-out;
 }
 
+.navbar-toggler{
+  border: none
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
 
 #menu{
     color: white;
@@ -50,34 +55,32 @@ color: white;
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
-  padding: 5px 0;
+  /* padding: 5px 0; */
   position: relative;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
+  border: none;
 }
 #navbar-top {
     background-color:#393f4d;
     z-index: 1000;
   }
 
-  #navbar-top.scrolled {
-    background-color: #3f3d3f; /* Change this to your desired color */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
+
 
 /* styling navbar links  */
 
 
 
 .nav-item a:hover{
-    background-image: linear-gradient(
-        to right,
-        #e4ece7,
-        #f5faf6 50%,
-        #f7f9f8
-      );
+  background-image: linear-gradient(
+    to right,
+    #f1f4f6,
+    #f7fafb 50%,
+    rgb(254, 254, 255) 
+  );
+
 }
 .nav-item a {
   
@@ -556,7 +559,7 @@ a:hover::before {
   }
   
   .btn-primary {
-    background: #007bff;
+    background: #116164;
     border: none;
     color: #fff;
     padding: 0.5rem 1.5rem;
@@ -565,7 +568,7 @@ a:hover::before {
   }
   
   .btn-primary:hover {
-    background: #0056b3;
+    background:  #05a43f;
   }
   
   /* Fade-in Animation for Cards */
@@ -684,7 +687,7 @@ a:hover::before {
 }
 .contact-details i{
     font-size: 1.5rem;
-    color: #fca61f;
+    color: #116164;
 }
 .contact-details p{
     font-size: 1.2rem;
@@ -692,7 +695,7 @@ a:hover::before {
 }
 .contact-form .form-control:focus{
     box-shadow: none;
-    border: 1px solid #fca61f;
+    border: 1px solid  #116164;
 }
 .contact-form .form-control{
     padding: 10px 10px;
@@ -721,10 +724,10 @@ footer{
     transition: color 0.3s, transform 1s; /* Smooth transition */
 }
 .social-links .dribble {
-    color: #f33a7e; /* Dribbble color */
+    color: #3a9af3; /* Dribbble color */
 }
 .social-links .dribble:hover {
-    background-color: #f33a7e; /* Background on hover */
+    background-color:  #3a9af3; /* Background on hover */
     color: #fff; /* Text color on hover */
     transform: translateY(-20px); /* Lift effect */
 }
@@ -744,7 +747,14 @@ footer{
     color: #fff; /* Text color on hover */
     transform: translateY(-20px); /* Lift effect */
 }
-
+.social-links .github {
+  color: black; /* WhatsApp color */
+}
+.social-links .github:hover {
+  background-color: #0f0f0f; /* Background on hover */
+  color: #fff; /* Text color on hover */
+  transform: translateY(-20px); /* Lift effect */
+}
 /* Styling for footer links */
 footer .link-group a {
     margin-left: 10px;
