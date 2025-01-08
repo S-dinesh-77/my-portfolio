@@ -4,26 +4,41 @@
     font-weight: 400;
     margin: 0px;
     padding: 0px;
-    
+    box-sizing: border-box;
     
 }
 
 body{
   width: 100%;
-  
+  overflow-x: hidden;
 }
-#navbar-top {
-  position: fixed; /* Ensures it's sticky */
-  top: 0; /* Sticks at the top of the viewport */
-  z-index: 1030; /* Keeps it above other content */
-  background-color: #393f4d; /* Matches your design */
+img, video {
+  max-width: 100%;
+  height: auto;
 }
 
-@media (max-width: 995px) {
+.container {
+  max-width: 100%;
+  overflow: hidden;
+}
+#navbar-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  background-color: #393f4d;
+  width: 100%; /* Ensure navbar doesn't extend beyond the viewport */
+  left: 0; /* Add this to make sure navbar stays aligned */
+}
+#navbar-top {
+  position: fixed; /* Sticky navbar fixed at top */
+  top: 0;
+  left: 0; /* Ensure navbar stays within viewport */
+  z-index: 1030;
+}
+@media (max-width: 768px) {
+  /* Adjust navbar for mobile */
   #navbar-top {
-      position: sticky;
-      top: 0;
-      z-index: 1030; 
+    padding: 10px; /* Adjust padding on mobile */
   }
 }
 
@@ -77,12 +92,7 @@ color: white;
   transition: all 0.3s ease-in-out;
   border: none;
 }
-#navbar-top {
-  position: sticky; /* Ensures it's sticky */
-  top: 0; /* Sticks at the top of the viewport */
-  z-index: 1020; /* Keeps it above other content */
-  background-color: #393f4d; /* Matches your design */
-}
+
 
 
 
@@ -208,7 +218,9 @@ a:hover::before {
     background-color:#393f4d;
     padding-top: 100px;
 }
-
+#home-content{
+  max-width: 100%;
+}
 .home h2{
     font-size: 3rem;
     line-height: 4rem;
@@ -347,7 +359,7 @@ a:hover::before {
 }
 
 #skill-container{
-  
+  max-width: 100%;
     display: flex;
     
 }
@@ -371,6 +383,7 @@ a:hover::before {
  height: 100px;
  margin: 0 40px;
  background: transparent;
+ overflow: hidden;
  }
  .logo-slide {
      display: inline-block;
