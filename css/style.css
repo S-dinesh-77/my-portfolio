@@ -526,7 +526,7 @@ a:hover::before {
 
   .card img {
       object-fit: cover; /* Ensures the image scales well */
-      
+      width: 100%;
       border: none;
       align-items: center;
       display: block;
