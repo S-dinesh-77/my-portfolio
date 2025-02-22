@@ -517,7 +517,7 @@ a:hover::before {
     
     box-shadow: 0 8px 15px rgba(224, 53, 53, 0.2);
     height: 100%;
-    color: #05a43f;
+    color:purple;
   }
 
   .card-body p{
